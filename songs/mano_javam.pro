@@ -23,20 +23,19 @@
 | [C]. . . . | [C]. . . . | [C]. . . . | [C]. . . . |
 ##########################################
 {start_of_analysis}
+{sov}
 manojavaṁ mārutatulyavegaṁ
 jitendriyaṁ buddhimatāṁ variṣṭha |
 vātātmajaṁ vānarayūthamukhyaṁ
 śrīrāmadūtaṁ śaraṇaṁ prapadye |
 
-1) [|Mind]|mano [|Swift]|javaṁ [|Wind]|māruta [|Like]|tulya [|Speed]|vegaṁ
-2) [|Conquered Senses]|jitendriyaṁ [|Intelligence]|buddhi [|Honoured]|matāṁ [|Best]|variṣṭha |
-3) [|Wind God]|vāt [|Son]|ātmajaṁ [|Monkey]|vānara [|Herd]|yūtha [|Chief]|mukhyaṁ
-4) [|Lord Rama]|śrīrāma [|Messenger]|dūtaṁ [|Protection]|śaraṇaṁ [|Taking Refuge]|prapadye |
+mano – mind; javaṁ – swift; māruta – wind; tulya – like; vegaṁ – speed; jitendriyaṁ – conquered senses; buddhi – intelligence; matāṁ – honoured; variṣṭha – best; vāt – wind god; ātmajaṁ – son; vānara – monkey; yūtha – herd; mukhyaṁ – chief; śrīrāma – lord rama; dūtaṁ – messenger; śaraṇaṁ – protection; prapadye – taking refuge
+{eov}
 
+{sot}
 (I take Refuge in Sri Hanuman)
 1: Who is Swift as the Mind and Fast as the Wind,
 2: Who is the Master of the Senses, and Honoured for His Excellent Intelligence, Learning and Wisdom,
 3: Who is Son of the Wind God and Chief among the Vanaras (Who were part of the Devas incarnated in the species of the monkeys to serve Sri Rama during His Incarnation),
 4: To that Messenger of Sri Rama, I take Refuge (by prostrating before him).
-
-
+{eot}
