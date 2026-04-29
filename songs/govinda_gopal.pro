@@ -16,6 +16,7 @@
 # {tempo: 80}
 {tags: Govinda, Kršna}
 {audio: https://samhita.cz/zpivani/audio/govinda_gopal_ik17_2015_04_08_k.mp3 | Samhita: 2015_04_08}
+{c: Nebo capo 1 od Hm}
 ##########################################
 |: [Am]Govin|[C]da Go|[Am]pāla |. . . . |
 | [C]. bhaja mana |[G]Kṛṣṇa Ha|[Am]ri . . . |. . . . :|
