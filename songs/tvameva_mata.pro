@@ -25,26 +25,17 @@ tvame|[D]va sar|[G]vaṃ mama |[D]deva de|[G]va
 {start_of_analysis}
 https://open.spotify.com/track/1rzzbwCczMOK5wrjYg2GpS?si=2937a13226bf44e3
 
-{start_of_analysis}
+{sov}
 tvameva mātā ca pitā tvameva
 tvameva bandhuśca sakhā tvameva
 tvameva vidyā draviṇaṃ tvameva
 tvameva sarvaṃ mama devadeva
 
-__Ty vskutku jsi má matka i můj otec, ty jsi můj příbuzný i můj přítel. Ty jsi mé vědění i mé bohatství, ty jsi pro mě vším, ó Bože bohů.__
+tvam — ty; eva — právě, vskutku, pouze (zdůrazňující částice); tvameva — ty jsi vskutku (spojení tvam + eva); mātā — matka; ca — a, i; pitā — otec; bandhuḥ — příbuzný, bratr; sakhā — přítel; vidyā — vědění, moudrost, učení; draviṇam — bohatství, majetek, síla; sarvam — všechno; mama — můj, mně; devadeva — Bůh bohů, Nejvyšší Pán; 
+{eov}
 
-• **tvam** = ty;
-• **eva** = právě, vskutku, pouze (zdůrazňující částice);
-• **tvameva** = ty jsi vskutku (spojení tvam + eva);
-• **mātā** = matka;
-• **ca** = a, i;
-• **pitā** = otec;
-• **bandhuḥ** = příbuzný, bratr;
-• **sakhā** = přítel;
-• **vidyā** = vědění, moudrost, učení;
-• **draviṇam** = bohatství, majetek, síla;
-• **sarvam** = všechno;
-• **mama** = můj, mně;
-• **devadeva** = Bůh bohů, Nejvyšší Pán;
+{sot}
+Ty vskutku jsi má matka i můj otec, ty jsi můj příbuzný i můj přítel. Ty jsi mé vědění i mé bohatství, ty jsi pro mě vším, ó Bože bohů.
+{eot}
 {end_of_analysis}
 

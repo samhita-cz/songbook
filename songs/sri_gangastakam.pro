@@ -39,13 +39,16 @@
 {c: Opakování (bez Intro): pomalu; M+Ž; rychle; pomalu}
 ##########################################
 {start_of_analysis}
-{start_of_analysis}
+{sov}
 bhagavati tava tīre nīra mātrā śano'haṃ
 vigata viṣayatṛṣṇaḥ kṛṣṇam ārādhayāmi
 sakala kaluṣa bhaṁge svarga sopāna gaṁge
 tarala tara taraṁge devi gaṁge prasīda
 
-__Ó Bohyně, sedě na tvém břehu, přijímaje za potravu pouze vodu a jsa zcela zbaven žízně po světských požitcích, uctívám Krišnu. Ó Gango, jež ničíš veškeré nečistoty a jsi schodištěm do nebes, ó Bohyně s třpytivými a hravými vlnami, buď mi milostivá.__
+bhagavati — ó Bohyně; tava — tvém; tīre — na břehu; nīra — voda; mātrā — pouze, jen; aśanaḥ — jídlo, potrava (śano'haṃ vzniklo spojením aśanaḥ a ahaṃ); ahaṃ — já ('haṃ); vigata — odešlý, zbavený; viṣaya — světské objekty, smyslové požitky; tṛṣṇaḥ — žízeň, touha; kṛṣṇam — Krišnu; ārādhayāmi — uctívám; sakala — všechny, veškeré; kaluṣa — hříchy, nečistoty; bhaṁge — ničitelko (od kořene bhañj = lámat, ničit); svarga — nebesa; sopāna — schodiště, žebřík; gaṁge — ó Gango; tarala — chvějící se, třpytivý, hravý; tara — velmi; taraṁge — vlny (ó ta, jež máš hravé vlny); devi — ó Bohyně; prasīda — buď milostivá, smiluj se, buď potěšena;
+{eov}
 
-• **bhagavati** = ó Bohyně; • **tava** = tvém; • **tīre** = na břehu; • **nīra** = voda; • **mātrā** = pouze, jen; • **aśanaḥ** = jídlo, potrava (śano'haṃ vzniklo spojením aśanaḥ a ahaṃ); • **ahaṃ** = já ('haṃ); • **vigata** = odešlý, zbavený; • **viṣaya** = světské objekty, smyslové požitky; • **tṛṣṇaḥ** = žízeň, touha; • **kṛṣṇam** = Krišnu; • **ārādhayāmi** = uctívám; • **sakala** = všechny, veškeré; • **kaluṣa** = hříchy, nečistoty; • **bhaṁge** = ničitelko (od kořene bhañj = lámat, ničit); • **svarga** = nebesa; • **sopāna** = schodiště, žebřík; • **gaṁge** = ó Gango; • **tarala** = chvějící se, třpytivý, hravý; • **tara** = velmi; • **taraṁge** = vlny (ó ta, jež máš hravé vlny); • **devi** = ó Bohyně; • **prasīda** = buď milostivá, smiluj se, buď potěšena;
+{sot}
+Ó Bohyně, sedě na tvém břehu, přijímaje za potravu pouze vodu a jsa zcela zbaven žízně po světských požitcích, uctívám Krišnu. Ó Gango, jež ničíš veškeré nečistoty a jsi schodištěm do nebes, ó Bohyně s třpytivými a hravými vlnami, buď mi milostivá.
+{eot}
 {end_of_analysis}  
