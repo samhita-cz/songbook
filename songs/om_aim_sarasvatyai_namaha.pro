@@ -26,38 +26,23 @@
 |[C]om |.  .  .  .  |.  .  .  .  |.  .  .  .  |
 ##########################################
 {start_of_analysis}
-Comming soon...
-
+{sov}
 om aiṁ sarasvatyai namaḥ ||
 
-{textcolor: green}
--> om – AUM
-{textcolor}
-symbolizuje vše přítomné, minulé, budoucí i to, co trojí čas překračuje
+om – AUM symbolizuje vše přítomné, minulé, budoucí i to, co trojí čas překračuje
 
-{textcolor: green}
--> aiṁ – bídža mantra, semenná mantra symbolizující bohyni Sarasvatí
-{textcolor}
+aiṁ – bídža mantra, semenná mantra symbolizující bohyni Sarasvatí
 
-{textcolor: green}
--> sarasvatyai – Sarasvatí - bohyně moudrosti a učení; bohyně řeči, jazyka, tvořivosti; choť boha Brahmy
-{textcolor}
+sarasvatyai – Sarasvatí - bohyně moudrosti a učení; bohyně řeči, jazyka, tvořivosti; choť boha Brahmy
 
-{textcolor: green}
--> namaḥ – vyjádření úcty; pozdravení
-{textcolor}
+namaḥ – vyjádření úcty; pozdravení
 
 Bídža mantra se zpívá jako oběť nebo pozdrav bohyně Sarasvatí, aby posílila naši moudrost a schopnost vyjadřování.
+{eov}
 
-{c: Odkazy}
-{textcolor: blue}
--> Krishna Das
-{textcolor}
-https://youtu.be/DOPXmLc0fcs
+<iframe width="100%" height="315" src="//www.youtube.com/embed/DOPXmLc0fcs?si=WuX5QRpu7UZMyxYh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-{textcolor: blue}
--> Sahil Jagtiani: (kvůli výslovnosti!)
-{textcolor}
+
+Sahil Jagtiani - Saraswati Beej Mantra (108 chants)
 https://sahiljagtiani.bandcamp.com/track/saraswati-beej-mantra-108-chants
-{musicpath: mp3/Saraswati - Krishna Das.mp3}
-{time: 7:07}
+
