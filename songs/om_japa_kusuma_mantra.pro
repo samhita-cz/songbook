@@ -11,16 +11,16 @@
 {category: Indické - ostatní}
 # {category: Písně}
 ##########################################
-# {capo: 0}
-# {time: 4/4}
+{capo: 2}
+{time: 4/4}
 # {tempo: 80}
 {tags: Vyāsa, Surya}
 {audio: audio/om_japa_kusuma_mantra.mp3 | Ancient Chants from India - Volume 2}
 ##########################################
-oṁ jāpākusuma–saṅkāśaṁ
-kāśyapeyaṁ mahā–dyutim |
-tamorim sarva–pāpaghnaṁ
-praṇato’smi divākaram ||
+o|[G]oṁ jāpākusuma–|[C]saṅkāśaṁ |
+|[G]kāśyapeyaṁ ma|[C]hā–dyutim |
+|[G]tamorim sarva–|[G]pāpaghnaṁ |
+|[G]praṇato’smi di|[G]vākaram ||
 ##########################################
 {start_of_analysis}
 {sov}
