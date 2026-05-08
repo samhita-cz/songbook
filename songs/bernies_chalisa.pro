@@ -19,9 +19,6 @@
 {audio: audio/bernies_chalisa_flow.mp3 | Krishna Das: Flow of Grace}
 {audio: audio/bernies_chalisa_door.mp3 | Krishna Das: Door of Ocean}
 
-{sot: popop}
-Překlad
-{eot}
 {sov: ↓ Doha 1}
 [Am]śrīguru [F]carana sa[G]roja [Am]raja
 [Am]nija manu [F]mukuru su[G]dhā[Am]ri|

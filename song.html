@@ -1129,7 +1129,6 @@ body.coffee-mode .transpose-buttons div {
   min-width: unset !important;
   height: auto !important;
   padding: 9px 10px !important;
-  display: flex !important;
   flex-direction: row !important;
   align-items: center !important;
   justify-content: center !important;
@@ -1139,6 +1138,10 @@ body.coffee-mode .transpose-buttons div {
   font-weight: bold !important;
   white-space: nowrap !important;
   box-sizing: border-box !important;
+}
+
+#print-song-btn {
+  display: flex !important;
 }
 
 #download-print-pdf-btn {
@@ -1894,24 +1897,6 @@ document.addEventListener('touchstart', preventScreenSleep, { once: true, passiv
 };
     // --------------------------------------------------------
 
-    async function checkPrintPdfExists(fileSlug) {
-      const pdfHref = `print_pdfs/${fileSlug}.pdf`;
-
-      try {
-        const headResponse = await fetch(pdfHref, { method: 'HEAD', cache: 'no-store' });
-        if (headResponse.ok) return true;
-      } catch (_) {
-        // Některá prostředí/local file URL nemusí HEAD podporovat.
-      }
-
-      try {
-        const getResponse = await fetch(pdfHref, { method: 'GET', cache: 'no-store' });
-        return getResponse.ok;
-      } catch (_) {
-        return false;
-      }
-    }
-
     window.updatePrintPdfDownloadButton = async function() {
       const downloadBtn = document.getElementById('download-print-pdf-btn');
       if (!downloadBtn) return;
@@ -1920,10 +1905,7 @@ document.addEventListener('touchstart', preventScreenSleep, { once: true, passiv
       const href = `print_pdfs/${fileSlug}.pdf`;
       downloadBtn.href = href;
 
-      let hasPrintPdf = Boolean(window.currentSongObj && window.currentSongObj.hasPrintPDF);
-      if (!hasPrintPdf && fileSlug) {
-        hasPrintPdf = await checkPrintPdfExists(fileSlug);
-      }
+      const hasPrintPdf = Boolean(window.currentSongObj && window.currentSongObj.hasPrintPDF);
 
       if (hasPrintPdf) {
         downloadBtn.style.display = 'flex';
