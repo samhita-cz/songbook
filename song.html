@@ -997,6 +997,9 @@ body.hide-chords .lyric-line {
   --menu-subtext: #888888;
   --menu-transpose-bg: #1a1a1a;
   --menu-accent: #ffd700; /* Zlatá pro nulu */
+  --menu-active-bg: #ffd700;
+  --menu-active-text: #1a1a1a;
+  --menu-active-border: #ffd700;
 }
 
 /* Pokud má body třídu pro světlý režim (uprav název třídy podle tvého kódu) */
@@ -1008,6 +1011,9 @@ body.light-mode, body:not(.dark-mode) { /* Přizpůsob podle toho, co reálně p
   --menu-subtext: #666666;
   --menu-transpose-bg: #e8e8e8;
   --menu-accent: #d4af37; /* Trochu tmavší zlatá pro bílý podklad */
+  --menu-active-bg: #d4af37;
+  --menu-active-text: #ffffff;
+  --menu-active-border: #b38f1f;
 }
 
 /* --- STYL MENU --- */
@@ -1021,7 +1027,7 @@ body.light-mode, body:not(.dark-mode) { /* Přizpůsob podle toho, co reálně p
   border-radius: 12px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.2);
   z-index: 1000;
-  width: 180px;
+  width: 200px;
   padding: 12px;
   color: var(--menu-text);
 }
@@ -1039,6 +1045,9 @@ body.sand-mode {
   --menu-subtext: #8d6e63;      /* Světlejší hnědá pro doplňky */
   --menu-transpose-bg: #dccfb0; /* Pozadí pro tlačítka transpozice */
   --menu-accent: #a0522d;       /* "Sienna" hnědá jako akcentní barva */
+  --menu-active-bg: #a0522d;
+  --menu-active-text: #ffffff;
+  --menu-active-border: #8a4323;
 }
 
 body.coffee-mode .more-menu-dropdown button,
@@ -1082,6 +1091,100 @@ body.coffee-mode .transpose-buttons div {
   width: 35px;
   height: 35px;
   font-size: 18px;
+}
+
+.print-btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 7px;
+  width: 100%;
+  padding: 9px 10px;
+  background: var(--menu-item-bg);
+  border: none;
+  color: var(--menu-text);
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s;
+  box-sizing: border-box;
+  white-space: nowrap;
+}
+
+.print-btn .print-icon {
+  font-size: 16px;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.print-btn:hover {
+  filter: brightness(0.93);
+}
+
+/* ID selektorem přebijeme !important z .topbar-actions button */
+#print-song-btn,
+#download-print-pdf-btn {
+  width: 100% !important;
+  min-width: unset !important;
+  height: auto !important;
+  padding: 9px 10px !important;
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 7px !important;
+  margin: 0 !important;
+  font-size: 13px !important;
+  font-weight: bold !important;
+  white-space: nowrap !important;
+  box-sizing: border-box !important;
+}
+
+#download-print-pdf-btn {
+  text-decoration: none !important;
+}
+
+.print-orientation-section {
+  margin-top: 10px;
+}
+
+.print-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.print-orientation-row {
+  display: flex;
+  gap: 8px;
+}
+
+#more-menu-dropdown .print-orientation-btn {
+  flex: 1;
+  width: auto !important;
+  min-width: 0 !important;
+  height: auto !important;
+  padding: 8px 6px !important;
+  border-radius: 8px;
+  border: 1px solid var(--menu-border) !important;
+  background: var(--menu-item-bg) !important;
+  color: var(--menu-text) !important;
+  font-size: 12px !important;
+  font-weight: 700 !important;
+  line-height: 1.2;
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+#more-menu-dropdown .print-orientation-btn.is-active {
+  border-color: var(--menu-active-border) !important;
+  color: var(--menu-active-text) !important;
+  background: var(--menu-active-bg) !important;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.08);
 }
 
 .grid-btn {
@@ -1383,6 +1486,72 @@ body.dark-mode .translation-label {
 body.sand-mode .translation-label {
     color: #4a3c2c !important; /* Tmavě hnědá pro dobrý kontrast na krémové */
 }
+
+@media print {
+  @page {
+    size: A4;
+    margin: 12mm;
+  }
+
+  body {
+    background: #fff !important;
+    color: #000 !important;
+  }
+
+  .song-topbar,
+  .scroll-nav,
+  .analysis-container,
+  .pdf-link,
+  #loading,
+  #error,
+  .audio-drawer {
+    display: none !important;
+  }
+
+  #page,
+  .song-topbar-inner {
+    max-width: none !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  #output-area {
+    /* Přebijeme i column-count: 1 !important z @media (max-width: 800px),
+       který jinak platí i pro tisk (A4 = ~793px) */
+    column-count: var(--col-count) !important;
+    column-gap: 8mm !important;
+    column-rule: 1px solid #ccc !important;
+  }
+
+  .song-title,
+  .song-subtitle,
+  .song-author,
+  .song-category,
+  .chord,
+  .lyric,
+  .comment,
+  .verse-label,
+  .chorus-label,
+  .song-capo,
+  .song-time,
+  .song-tempo,
+  .translation-block,
+  .translation-label {
+    color: #000 !important;
+  }
+
+  .translation-block {
+    background: transparent !important;
+    border-left-color: #888 !important;
+  }
+
+  a,
+  a:visited {
+    color: inherit !important;
+    text-decoration: none !important;
+  }
+}
 </style>
 </head>
 <body>
@@ -1424,6 +1593,27 @@ body.sand-mode .translation-label {
                 <span class="shift-display-inline" id="shift-display" style="min-width: 24px; text-align: center; display: inline-block;">0</span>
                 <button class="menu-btn" onclick="changeShift(1)">♯</button>
               </div>
+            </div>
+          </div>
+
+          <hr class="menu-divider" style="margin: 10px 0 8px 0;">
+          <div class="print-actions">
+            <a class="print-btn" id="download-print-pdf-btn" title="Stáhnout připravené PDF" style="display: none;" href="#" download>
+              <span class="print-icon">📥</span>
+              <span>Stáhnout layout PDF</span>
+            </a>
+
+            <button class="print-btn" type="button" id="print-song-btn" title="Vytisknout nebo uložit jako PDF">
+              <span class="print-icon">🖨</span>
+              <span>Tisk / PDF</span>
+            </button>
+          </div>
+
+          <div class="print-orientation-section">
+            <span class="menu-label" style="margin-bottom: 6px;">Orientace tisku</span>
+            <div class="print-orientation-row">
+              <button type="button" class="print-orientation-btn" id="print-orientation-portrait" title="Tisk na výšku">Výška</button>
+              <button type="button" class="print-orientation-btn" id="print-orientation-landscape" title="Tisk na šířku">Šířka</button>
             </div>
           </div>
           
@@ -1608,9 +1798,11 @@ document.addEventListener('touchstart', preventScreenSleep, { once: true, passiv
     
     // --- OBNOVENÉ GLOBÁLNÍ PROMĚNNÉ A FUNKCE PRO TLAČÍTKA ---
     const notes = ['C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B'];
+    const PRINT_ORIENTATION_KEY = 'samhita_print_orientation';
     let currentShift = parseInt(localStorage.getItem(`samhita_shift_${songName}`)) || 0;
     let currentFontSize = parseInt(localStorage.getItem('samhita_fontSize')) || 21;
     let currentCols = parseInt(localStorage.getItem('samhita_columns')) || 1;
+    let currentPrintOrientation = localStorage.getItem(PRINT_ORIENTATION_KEY) === 'landscape' ? 'landscape' : 'portrait';
     let analysisOpen = false; // Tady si budeme pamatovat stav šuplíku
 
     if (shiftDisplayEl) shiftDisplayEl.textContent = currentShift;
@@ -1630,6 +1822,44 @@ document.addEventListener('touchstart', preventScreenSleep, { once: true, passiv
         localStorage.setItem(`samhita_shift_${songName}`, currentShift);
         if (shiftDisplayEl) shiftDisplayEl.textContent = currentShift;
         if (songData) window.renderSong(); // Okamžitě překreslí akordy
+    };
+
+    window.printCurrentSong = function() {
+      const menuDropdown = document.getElementById('more-menu-dropdown');
+      if (menuDropdown) {
+        menuDropdown.classList.remove('is-open');
+      }
+      if (typeof window.applyPrintOrientation === 'function') {
+        const savedPrintOrientation = localStorage.getItem('samhita_print_orientation') === 'landscape' ? 'landscape' : 'portrait';
+        window.applyPrintOrientation(savedPrintOrientation);
+      }
+      window.print();
+    };
+
+    function getPrintOrientationStyleEl() {
+      let styleEl = document.getElementById('dynamic-print-orientation-style');
+      if (!styleEl) {
+        styleEl = document.createElement('style');
+        styleEl.id = 'dynamic-print-orientation-style';
+        document.head.appendChild(styleEl);
+      }
+      return styleEl;
+    }
+
+    window.applyPrintOrientation = function(orientation) {
+      currentPrintOrientation = orientation === 'landscape' ? 'landscape' : 'portrait';
+      localStorage.setItem(PRINT_ORIENTATION_KEY, currentPrintOrientation);
+
+      const styleEl = getPrintOrientationStyleEl();
+      const pageSize = currentPrintOrientation === 'landscape' ? 'A4 landscape' : 'A4 portrait';
+      styleEl.textContent = `@media print { @page { size: ${pageSize}; margin: 12mm; } }`;
+
+      const portraitBtn = document.getElementById('print-orientation-portrait');
+      const landscapeBtn = document.getElementById('print-orientation-landscape');
+      if (portraitBtn && landscapeBtn) {
+        portraitBtn.classList.toggle('is-active', currentPrintOrientation === 'portrait');
+        landscapeBtn.classList.toggle('is-active', currentPrintOrientation === 'landscape');
+      }
     };
   
     window.applyColumnLayout = () => {
@@ -1663,6 +1893,44 @@ document.addEventListener('touchstart', preventScreenSleep, { once: true, passiv
     }
 };
     // --------------------------------------------------------
+
+    async function checkPrintPdfExists(fileSlug) {
+      const pdfHref = `print_pdfs/${fileSlug}.pdf`;
+
+      try {
+        const headResponse = await fetch(pdfHref, { method: 'HEAD', cache: 'no-store' });
+        if (headResponse.ok) return true;
+      } catch (_) {
+        // Některá prostředí/local file URL nemusí HEAD podporovat.
+      }
+
+      try {
+        const getResponse = await fetch(pdfHref, { method: 'GET', cache: 'no-store' });
+        return getResponse.ok;
+      } catch (_) {
+        return false;
+      }
+    }
+
+    window.updatePrintPdfDownloadButton = async function() {
+      const downloadBtn = document.getElementById('download-print-pdf-btn');
+      if (!downloadBtn) return;
+
+      const fileSlug = (window.currentSongObj && window.currentSongObj.file) ? window.currentSongObj.file : songName;
+      const href = `print_pdfs/${fileSlug}.pdf`;
+      downloadBtn.href = href;
+
+      let hasPrintPdf = Boolean(window.currentSongObj && window.currentSongObj.hasPrintPDF);
+      if (!hasPrintPdf && fileSlug) {
+        hasPrintPdf = await checkPrintPdfExists(fileSlug);
+      }
+
+      if (hasPrintPdf) {
+        downloadBtn.style.display = 'flex';
+      } else {
+        downloadBtn.style.display = 'none';
+      }
+    }
   
     // --- OPRAVA RACE CONDITION A CACHOVÁNÍ ---
     // Přidáno ?t=... zabrání mobilu načíst starý JSON bez PDF šuplíku
@@ -1672,6 +1940,7 @@ document.addEventListener('touchstart', preventScreenSleep, { once: true, passiv
         const song = songs.find(s => s.file === songName);
         if (song) {
           window.currentSongObj = song; 
+          window.updatePrintPdfDownloadButton();
           
           // POJISTKA: Pokud se .pro soubor načetl rychleji než JSON, vykresli ho znovu!
           if (songData !== '') {
@@ -2069,11 +2338,8 @@ window.toggleAnalysis = function() {
     // 1. NASTAVENÍ SLOUPCŮ (Ošetření poskočení textu na mobilu)
     const isMobile = window.innerWidth < 600;
     if (isMobile) {
-        // Na mobilu vždy vynutíme 1 sloupec
-        currentCols = 1;
-    } else {
-        // Na PC/Tabletu načteme z paměti, nebo dáme 1 jako výchozí
-        currentCols = parseInt(localStorage.getItem('samhita_columns')) || 1;
+      // Na mobilu vynutíme 1 sloupec do uloženého nastavení.
+      localStorage.setItem('samhita_columns', '1');
     }
 
     // Aplikujeme rozvržení a zaktualizujeme text v tlačítku menu
@@ -2082,7 +2348,8 @@ window.toggleAnalysis = function() {
     }
     const colBtn = document.getElementById('col-toggle-btn');
     if (colBtn) {
-        colBtn.innerText = `${currentCols} ⫿`;
+      const colsFromStorage = parseInt(localStorage.getItem('samhita_columns')) || 1;
+      colBtn.innerText = `${colsFromStorage} ⫿`;
     }
 
     // 2. AKORDY (Vypínání/Zapínání)
@@ -2115,6 +2382,45 @@ window.toggleAnalysis = function() {
             e.stopPropagation();
             menuDropdown.classList.toggle('is-open');
         });
+
+      if (typeof window.applyPrintOrientation === 'function') {
+        const savedPrintOrientation = localStorage.getItem('samhita_print_orientation') === 'landscape' ? 'landscape' : 'portrait';
+        window.applyPrintOrientation(savedPrintOrientation);
+      }
+
+      const printBtn = document.getElementById('print-song-btn');
+      if (printBtn) {
+        printBtn.addEventListener('click', () => {
+          window.printCurrentSong();
+        });
+      }
+
+      const downloadPrintPdfBtn = document.getElementById('download-print-pdf-btn');
+      if (downloadPrintPdfBtn) {
+        if (typeof window.updatePrintPdfDownloadButton === 'function') {
+          window.updatePrintPdfDownloadButton();
+        }
+        downloadPrintPdfBtn.addEventListener('click', (e) => {
+          if (!downloadPrintPdfBtn.href || downloadPrintPdfBtn.href.endsWith('#')) {
+            e.preventDefault();
+            return;
+          }
+          menuDropdown.classList.remove('is-open');
+        });
+      }
+
+      const portraitBtn = document.getElementById('print-orientation-portrait');
+      const landscapeBtn = document.getElementById('print-orientation-landscape');
+      if (portraitBtn) {
+        portraitBtn.addEventListener('click', () => {
+          window.applyPrintOrientation('portrait');
+        });
+      }
+      if (landscapeBtn) {
+        landscapeBtn.addEventListener('click', () => {
+          window.applyPrintOrientation('landscape');
+        });
+      }
 
         document.addEventListener('click', (e) => {
             if (!menuDropdown.contains(e.target)) {

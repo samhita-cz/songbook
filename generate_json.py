@@ -8,6 +8,7 @@ from datetime import date
 SONGS_DIR = 'songs'
 JSON_FILE = 'songs.json'
 PDF_DIR = 'pdfs'  # Složka, kde máš uložená PDF
+PRINT_PDF_DIR = 'print_pdfs'  # Složka se statickými layout PDF písniček
 
 def normalize_for_sort(text):
     """Převede text na malá písmena a odstraní diakritiku pro potřeby řazení."""
@@ -126,6 +127,8 @@ def update_songs_json():
             # Kontrola existence PDF
             pdf_path = os.path.join(PDF_DIR, f"{file_slug}.pdf")
             has_pdf = os.path.exists(pdf_path)
+            print_pdf_path = os.path.join(PRINT_PDF_DIR, f"{file_slug}.pdf")
+            has_print_pdf = os.path.exists(print_pdf_path)
 
             # --- NOVÁ LOGIKA PRO AUDIO ---
             audio_final = None
@@ -152,6 +155,7 @@ def update_songs_json():
                 # Aktualizujeme nové položky včetně audia
                 song['audio'] = audio_final
                 song['hasPDF'] = has_pdf
+                song['hasPrintPDF'] = has_print_pdf
                 song['analysis'] = meta['analysis']
             else:
                 song = {
@@ -162,6 +166,7 @@ def update_songs_json():
                     "tags": meta['tags'] if meta['tags'] is not None else [],
                     "dateAdded": str(date.today()),
                     "hasPDF": has_pdf,
+                    "hasPrintPDF": has_print_pdf,
                     "analysis": meta['analysis']
                 }
             new_songs_list.append(song)
