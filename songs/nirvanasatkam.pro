@@ -15,8 +15,8 @@
 {time: 3/4}
 # {tempo: 80}
 {tags: Adi Śaṅkarácārya, Čitánanda, Nirvāṇa satkam}
-{audio:https://samhita.cz/zpivani/audio/cidanandarupa_iz9_2017_04_05_k.mp3 | Verze 1}
-{audio: https://samhita.cz/zpivani/audio/cidanandarupa_iz9_2018_11_14_k.mp3 | Verze 2}
+{audio:https://samhita.cz/zpivani/audio/cidanandarupa_iz9_2017_04_05_k.mp3 | Samhita 5.4.2017 - Verze 1}
+{audio: https://samhita.cz/zpivani/audio/cidanandarupa_iz9_2018_11_14_k.mp3 | Samhita 14.11.2018 - Verze 2}
 ##########################################
 {soc: REF}
 |: . . [C]cidā|nanda rū|paḥ śivo |[G]ham śivo |[C]ham . . :|
@@ -217,4 +217,21 @@ Pět tělesných obalů (paňčakóša): fyzický obal (potravinový - annamaja 
 ** Dvě různé verze posledního verše.
 
 ॐ
+
+{sov:Seriál o tomto díle:}
+ Celý playlist: https://www.youtube.com/playlist?list=PLAPrVB8wngPkPYwR_MXZVjSTnmu9mImTr
+ Part 1 Úvod: https://youtu.be/FLun59kyn4A
+ Part 2 Šlóka 1: https://youtu.be/VR1K7aq8UCU
+ Part 3 Šlóka 2: https://youtu.be/HFFlnXxEQaM
+ Part 4 Šlóka 3: https://youtu.be/mfL76frXPp0
+ Part 5 Šlóka 4: https://youtu.be/QCgZIBTOEJ0
+ Part 6 Šlóka 5: https://youtu.be/3UKL2bot0EY
+ Part 7 Šlóka 6: https://youtu.be/EBEZp8Jxp0M
+{eov}
+
+{sov: Nahrávky:}
+Deva Premal: https://youtu.be/vj5ASW8-2p0
+Zpěv - přesná výslovnost + překlad: https://youtu.be/YP1qRlZInNc
+Zpěv - přesná výslovnost bez přerušování překladem: https://youtu.be/rKx7K13OvQ4
+{eov}
 {end_of_analysis}
