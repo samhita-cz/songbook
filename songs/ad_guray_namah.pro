@@ -1,4 +1,4 @@
-{title: Ād guray namaḥ-TEST}
+{title: Ād guray namaḥ}
 {subtitle: Mangala Charan mantra}
 {author: Autor}
 # ODZNAČIT JEDNU Z KATEGORIÍ
