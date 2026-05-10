@@ -18,8 +18,8 @@
 {audio:}
 ##########################################
 {sov: Verse 1}
-Prabhujī dayā karo
-Maname āna baso
+|: . . Prabhu|[C]jī |. dayā ka|[G]ro :|
+|: . . Mana|[Am]me | . . ā[G]na [C]ba|[G]so :|
 Tuma binā lāge sūnā
 Khālī ghaṭame prema bharo
 Tantra mantra pūjā nahīṃ jānū
