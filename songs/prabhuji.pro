@@ -15,21 +15,40 @@
 {time: 4/4}
 # {tempo: 80}
 {tags: Ravi Shankar}
-{audio:}
+{audio: audio/prabhuji.mp3|Ravi Shankar - Prabhujī dayā karo}
 ##########################################
+{soc: REF}
+|: . . Prabhu|[C]jī . . . | . dayā ka|[G]ro :|
+|: . . [C]Mana|[Am]me | . ā[G]na [C]ba|[G]so :|
+
+| . . Prabhu|[C]jī . . . | . dayā ka|[G]ro |
+| . . [C]Mana|[Am]me . . . | . ā[G]na [C]ba|[G]so |
+| . . Prabhu|[C]jī . . . | . dayā ka|[G]ro |
+{eoc}
+
 {sov: Verse 1}
-|: . . Prabhu|[C]jī |. dayā ka|[G]ro :|
-|: . . Mana|[Am]me | . . ā[G]na [C]ba|[G]so :|
-Tuma binā lāge sūnā
-Khālī ghaṭame prema bharo
-Tantra mantra pūjā nahīṃ jānū
-Mai to kevala tumako hī mānū
-Sāre jaga me dhundā tumako
-Aba to ākara bāhan dharo  
-{eov}
+|: [C]. Tuma bi|nā lā|ge sū|nā :|
+|: [C]. Khālī |[G]ghaṭame |. prema bha|[Am]ro |
+|: [Am]. Khālī |[G]ghaṭame |. prema bha|[Am]ro |
+
+{soc: REF}
+| . . Prabhu|[C]jī . . . | . dayā ka|[G]ro |
+| . . [C]Mana|[Am]me . . . | . ā[G]na [C]ba|[G]so |
+| . . Prabhu|[C]jī . . . | . dayā ka|[G]ro |
+{eoc}
+
+{sov: Verse 2}
+|: [C]Tantra man|tra pū|[Am]jā nahīṃ |jā[C]nū :|
+|[C]. Mai to |kevala |. tumako hī |mā[G]nū |
+|:[Am]Sāre |jaga me |[G]. dhundā |tumako :|
+|:[C]. Aba to |ākara |. bāhan dha|[G]ro :|
+|[C]ee Prabhu|[Am]jī . . . | Prabhu[G]jī |
 #
 {soc: REF}
-refrén 
+|: . . Prabhu|[C]jī . . . | . dayā ka|[G]ro :|
+|: . . [C]Mana|[Am]me . . . | . ā[G]na [C]ba|[G]so :|
+|: . . Prabhu|[C]jī . . . | . dayā ka|[G]ro :|
+|: . . Prabhu|[C]jī . . . :| (x opakovat)
 {eoc}
 ##########################################
 {start_of_analysis}

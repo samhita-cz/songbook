@@ -309,7 +309,13 @@
     "name": "Prabhujī dayā karo",
     "category": "Indické - ostatní",
     "file": "prabhuji",
-    "audio": "",
+    "audio": [
+      {
+        "url": "audio/prabhuji.mp3",
+        "label": "Ravi Shankar - Prabhujī dayā karo",
+        "title": "Ravi Shankar - Prabhujī dayā karo"
+      }
+    ],
     "tags": [
       "Ravi Shankar"
     ],
