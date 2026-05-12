@@ -43,8 +43,8 @@
 {eov}
 
 {sov: Verse 3}
-|:[Am]Sāre |jaga me |[G]. dhundā |tumako :|
-|:[C]. Aba to |ākara |. bāhan dha|[G]ro :|
+|: [Am]Sāre |jaga me |[G]. dhundā |tumako :|
+|: [C]. Aba to |ākara |. bāhan dha|[G]ro :|
 |[C]ee Prabhu|[Am]jī . . . | Prabhu[G]jī |
 {eov}
 
