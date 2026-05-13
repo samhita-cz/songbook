@@ -188,6 +188,26 @@
     "hasPrintPDF": false
   },
   {
+    "name": "Mere gurudev",
+    "category": "Indické - ostatní",
+    "file": "mere_gurudev",
+    "audio": [
+      {
+        "url": "audio/mere_gurudev.mp3",
+        "label": "Krishna Das - Door of Faith",
+        "title": "Krishna Das - Door of Faith"
+      }
+    ],
+    "tags": [
+      "Guru",
+      "Krishna Das"
+    ],
+    "dateAdded": "2026-05-13",
+    "hasPDF": false,
+    "hasPrintPDF": false,
+    "analysis": "Comming soon..."
+  },
+  {
     "name": "Nija Nija Prabho",
     "category": "Indické - ostatní",
     "file": "nija_prabho",
