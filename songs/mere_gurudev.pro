@@ -18,11 +18,46 @@
 {audio: audio/mere_gurudev.mp3 | Krishna Das - Door of Faith}
 ##########################################
 {sov: Verse 1}
-[G]Rāma  
+| . . mere |[G]gurudev | . . . cara|ṇoṁ [C]par | . . . su-|
+|-mana [Em]śra|ddhā . ke |[C]ar[Em]pita |[D]haiṁ . . | . . . . | 
+|terī |[G]hī den | . . hai |jo [C]hai | . . . va-|
+|-hī [Em]tujh|ko . sam|[C]ar[Em]pita |[D]hai . . | . . . . | 
 {eov}
-#
+
+{sov: Verse 2}
+na prīti hai pratīti hai 
+nahīṁ pūja kī śakti hai 
+merā yaha man merā yaha tan me-
+-rā kaṇ kaṇ samarpita hai
+{eov}
+
 {soc: REF}
-refrén 
+mere gurudev caraṇoṁ para su-
+-mana śraddhā ke arpita haiṁ 
+{eoc}
+
+{sov: Verse 3}
+tumhī ho bhāva meṁ mere 
+vicāroṁ meṁ pukāroṁ meṁ 
+banā le yaṁtra aba mujhako me-
+-re sarvatra samarpita ha
+{eov}
+
+{soc: REF}
+mere gurudev caraṇoṁ para su-
+-mana śraddhā ke arpita haiṁ 
+{eoc}
+
+{sov: Verse 4=1}
+mere gurudev caraṇoṁ para su-
+-mana śraddhā ke arpita haiṁ 
+terī hī den hai jo hai va-
+-hī tujhako samarpita hai 
+{eov}
+
+{soc: REF}
+mere gurudev caraṇoṁ para su-
+-mana śraddhā ke arpita haiṁ 
 {eoc}
 ##########################################
 {start_of_analysis}
